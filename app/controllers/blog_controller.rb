@@ -12,7 +12,7 @@ class BlogController < ApplicationController
   end
 
   def archive
-    @blog_entries = BlogEntry.news.latest.paginate page: params[:page], per_page: 10
+    @blog_entries = BlogEntry.news.latest.paginate page: params[:page], per_page: 50
   end
 
   def show

@@ -15,7 +15,8 @@ hr {
     border-radius: 5px;
 }
 div#content {
-    padding: 40px 0 20px 0;
+    clear: both;
+    padding: 40px 20px 20px 20px;
 }
 div#footer {
     clear: both;
@@ -26,9 +27,9 @@ div.gr {
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
-    .clear {
-        clear: both;
-    }
+}
+.clear {
+    clear: both;
 }
 .left-col {
     background: #fff;
@@ -1164,207 +1165,46 @@ li a {
     width: 30%;
 }
 
-#news_container {
-    max-width: 1200px;
-    padding: 20px;
-    margin: 0 auto;
-    position: relative;
-    .tabs {
-        list-style-type: none;
-        font-weight: bold;
-        font-size: 15px;
-        height: 40px;
-        overflow: hidden;
-        border-radius: 5px 5px 0 0;
-        position: relative;
-        margin-bottom: -5px;
-        li {
-            float: left;
-            margin-right: 1px;
-            a {
-                display: block;
-                background: #fff;
-                padding: 10px 20px;
-            }
+#content #blog {
+    max-width: 700px;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+    article {
+        clear: both;
+        & + article.item {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
-    }
-    #news_list {
-        background: #fff;
-        box-shadow: 0 0 5px rgba(0,0,0,.1);
-        border-radius: 5px;
-    }
-    .back {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 5;
-        a {
+        a.blog_image {
             display: block;
-            width: 48px;
-            height: 35px;
-            background: image-url('_new/favorites-back.png') no-repeat top left;
-            cursor: pointer;
-            text-indent: -50000px;
-            opacity: 0.5;
-            &:hover {
-                opacity: 1;
-            };
-        }
-    }
-    .blog-title {
-        text-transform: uppercase;
-        margin: 0 20px 0;
-        padding: 30px 0 20px;
-        border-bottom: 1px solid #f4f4f4;
-        padding-right: 275px;
-    }
-    #news_top {
-        position: absolute;
-        right: 40px;
-        top: 40px;
-        .links {
-            position: absolute;
-            right: 210px;
-            top: 5px;
-            list-style: none;
-            width: 68px;
-            li {
-                width: 24px;
-                height: 24px;
-                float: left;
-                margin-left: 10px;
-                a {
-                    display: block;
-                    width: 24px;
-                    height: 24px;
-                    float: left;
-                }
-                a.facebook {
-                    background: image-url("_new/link-facebook.png") no-repeat left center;
-                }
-                a.rss {
-                    background: image-url("_new/link-rss.png") no-repeat left center;
-                }
+            margin: 0 20px 10px 0;
+            float: left;
+            img {
+                width: 100%;
             }
         }
-        .drop_down {
-            list-style: none;
-            font-size: 12px;
-            width: 200px;
-            text-transform: capitalize;
-            li {
-                font-weight: bold;
-                background: #ebebeb image-url("_new/news-drop_down.png") no-repeat right center;
-                border-radius: 5px;
-                padding: 5px 10px;
-                border: 1px solid #aaaaaa;
-                position: relative;
-                cursor: pointer;
-                color: #333;
-                z-index: 2;
-                &:hover {
-                    background-color: #ddd;
-                    border-radius: 5px 5px 0 0;
-                };
-                &:hover ul {
-                    display: block;
-                };
-                ul {
-                    font-size: 12px;
-                    position: absolute;
-                    list-style: none;
-                    left: -1px;
-                    top: 30px;
-                    z-index: 1;
-                    background: #ebebeb;
-                    width: 100%;
-                    border: 1px solid #aaaaaa;
-                    border-radius: 0 0 5px 5px;
-                    cursor: default;
-                    display: none;
-                    li {
-                        border-radius: 0;
-                        background: transparent;
-                        border: none;
-                        border-bottom: 1px solid #ccc;
-                        border-top: 1px solid #fafafa;
-                        margin: 0 10px;
-                        padding: 0;
-                        cursor: default;
-                        &:first-child {
-                            border-top: none;
-                        }
-                        &:last-child {
-                            border-bottom: none;
-                        }
-                        &:hover {
-                            background: #ebebeb;
-                        };
-                        a {
-                            padding: 8px;
-                            display: block;
-                        }
-                        a:hover {
-                            color: #333 !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    article.item {
-        width: 49%;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #f4f4f4;
-        float: left;
-        &.single {
-            width: 100%;
-            float: none;
-            border-bottom: none;
-            .aside {
-                width: 35%;
-                float: left;
-            }
-            .main {
-                width: 62%;
-                float: left;
-                padding-left: 3%;
-                padding-top: 53px;
-                position: relative;
-            }
-        }
-        .inner {
-            padding: 20px;
-            position: relative;
-        }
-        .top {
-            position: relative;
-            h1 {
-                font-size: 22px;
-            }
-            .posted_at {
-                font-size: 11px;
-                color: #ccc;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
+        .image {
+            margin: 10px 0;
         }
         .text {
             p {
                 font-size: 14px;
             }
         }
-        .image {
-            margin: 10px 0;
-            img {
-                max-width: 100%;
-            }
+        .posted_at {
+            font-size: 11px;
+            color: $darkish;
         }
     }
 }
 
 .admin_panel {
+    clear: both;
     list-style: none;
     font-weight: bold;
     font-size: 13px;

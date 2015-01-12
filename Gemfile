@@ -28,6 +28,7 @@ gem 'exception_notification'
 gem 'google-analytics-rails'
 gem 'rails-timeago'
 gem 'jbuilder'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :development do
   gem 'quiet_assets'

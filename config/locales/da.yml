@@ -49,11 +49,11 @@ da:
           attributes:
             themes:
               blank: kan ikke alle være slået fra
-  
+
   will_paginate:
     previous_label: Forrige
     next_label: Næste
-        
+
   menu:
     routes: Kort
     blog: Blog
@@ -71,15 +71,16 @@ da:
     api: "API"
 
   news:
-    title: Seneste nyheder
+    title: Blog
     categories: Tags
+    read_more: Læs mere
     search: Søg nyhed...
     label_facebook: Følg os på Facebook
     label_rss: abonnér via rss
-  
+
   da: Dansk
   en: Engelsk
-  
+
   page_title: I Bike Cph
   edit: Rediger
   new: Ny
@@ -96,19 +97,18 @@ da:
   comment: kommentar
   not_a_valid_email: er ikke en gyldig email adresse 
   empty: Ikke udfyldt
- 
+
   #yes and no are reserved words in yaml, so need to quote
   'yes': 'Ja'
   'no': 'Nej'
-  
   vote:
     one: 1 stemme
     other: "%{count} stemmer"
-  
+
   comment:
     one: 1 kommentar
     other: "%{count} kommentarer"
-  
+
   issue:
     one: 1 indlæg
     other: "%{count} indlæg"
@@ -118,9 +118,9 @@ da:
     other: "%{count} karakterer"
     remaining: "%{count} karakterer tilbage"
     too_long: "%{count} karakterer for lang"
- 
+
     character:
- 
+
   follows:
     follow:
         follow: Følg
@@ -153,7 +153,7 @@ da:
     flash:
       unauthorized: Uautoriseret adgang!
       invalid_token: Ugyldigt token!
-            
+
   favourites:
     flash:
       fav_not_found: Favorit findes ikke!
@@ -168,14 +168,14 @@ da:
       updated: Issue opdateret!
       created: Issue lavet!
       deleted: Issue slettet!
-      
+
   routes:
     flash:
       route_not_found: Rute findes ikke!
       updated: Rute opdateret!
       created: Rute lavet!
       deleted: Rute slettet!
-        
+
   sessions:
     new:
       title: Log ind
@@ -203,7 +203,7 @@ da:
       params_missing: Nødvendige parameterer mangler.
       confirm_account_title: Næsten i mål...
       confirm_account: Før du kan logge ind, bedes du klikke på linket i den e-mail vi har sendt til dig. Du kan gensende e-mailen fra ibikecph.dk.
-  
+
   accounts:
     show:
       title: Konto indstillinger
@@ -284,7 +284,7 @@ da:
       submit: Tilføj kommentar
     comments:
       title: Kommentarer
-  
+
   emails:
     new:
       title: Ændre Email
@@ -312,7 +312,7 @@ da:
       verified_with_password: "Emailen #{@email} verificeret, og adgangskode gemt."
       verification_wait: "Verifikationsemail kan kun sendes hver %{time}. Vent venligst lidt, og prøv så igen."
       verification_not_found: Ugyldigt verifikationslink.
-      
+
   password_resets:
     new_ask:
       title: Nulstil adgangskode
@@ -337,7 +337,7 @@ da:
       invalid_link: Ugyldigt link til nulstilling af kodeord.
       expired_link: Link til nulstilling af kodeord er udløbet.
       fb_user_AD: "Adgang nægtet: Facebook-brugere kan ikke nulstille kodeord!"
-            
+
   user_mailer:
     activation:
       subject: Aktiver din I Bike Cph konto
@@ -355,7 +355,7 @@ da:
       subject: "Kommentar: %{title}"
       body: "%{user} tilføjede en kommentar '%{title}' på I Bike Cph:"
     unsubscribing: "Denne email kan ikke besvares. Hvis du ikke ønsker at modtage email fra I Bike CPH, kan du ændre dine indstillinger på %{link}."
-    
+
   issues:
     view_all_issues: Se alle indlæg
     index:
@@ -410,7 +410,7 @@ da:
       created: Indlæg oprettet.
       updated: Indlæg opdateret.
       destroyed: Indlæg slettet.
-  
+
   corps:
     index:
       title: Hej testpilot!
@@ -439,11 +439,11 @@ da:
       already_joined: Du er allerede med i testerkorpset
       left: Du har forladt testerkorpset
       already_left: Du er ikke med i testerkorpset
-  
+
   pages:
     terms:
       title: Brugerbetingelser for www.ibikecph.dk
-     
+
   errors:
     forbidden:
       title: Desværre
@@ -490,7 +490,7 @@ da:
     electric_bike: Elcykel
     reset: Nulstil
     link_for_route: Link
-  
+
   instructions:
     1: første
     2: anden

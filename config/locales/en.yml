@@ -43,7 +43,7 @@ en:
         password_confirmation: Confirm Password
         current_password: Current Password
         new_password_confirmation: Confirm New Password
-  
+
   will_paginate:
     previous_label: Previous
     next_label: Next
@@ -52,7 +52,7 @@ en:
     idea: Idea
     bug: Bug
     map: Map
-    
+
   menu:
     routes: Map
     blog: Blog
@@ -69,8 +69,9 @@ en:
     api: "API"
 
   news:
-    title: Latest news
+    title: Blog
     categories: Tags
+    read_more: Read more
     search: Search news...
     label_facebook: Follow us on Facebook
     label_rss: Subscribe to RSS
@@ -98,19 +99,19 @@ en:
   #yes and no are reserved words in yaml, so need to quote
   'yes': 'Yes'
   'no': 'No'
-  
+
   vote:
     one: 1 vote
     other: "%{count} votes"
-  
+
   comment:
     one: 1 comment
     other: "%{count} comments"
-  
+
   issue:
     one: 1 entry
     other: "%{count} entries"
-  
+
   character:
     one: 1 character
     other: "%{count} characters"
@@ -122,7 +123,7 @@ en:
         follow: Follow
         start: Click to Follow
         stop: Click to Stop Following
-  
+
   users:
     index:
       title: Users
@@ -149,7 +150,7 @@ en:
     flash:
       unauthorized: Unauthorized access!
       invalid_token: Invalid authentication token!
-      
+
   favourites:
     flash:
       fav_not_found: Favourite doesn't exist!
@@ -164,14 +165,14 @@ en:
       updated: Issue updated successfully!
       created: Issue created successfully!
       deleted: Issue deleted successfully!
-      
+
   routes:
     flash:
       route_not_found: Route doesn't exist!
       updated: Route updated successfully!
       created: Route created successfully!
       deleted: Route deleted successfully!
-      
+
   sessions:
     new:
       title: Login
@@ -199,7 +200,7 @@ en:
       params_missing: Required parameter(s) missing.
       confirm_account_title: Almost there...
       confirm_account: Before you can log in, please click on the link in the e-mail we have sent to you. You can resend the e-mail from ibikecph.dk.
-      
+
   accounts:
     show:
       title: Account settings
@@ -248,7 +249,7 @@ en:
       activate_new_email: "You updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirm link to finalize confirming your new email address."
     misc:
       cancel: Cancel
-      
+
   blog:
     index:
       new: New Blog Entry
@@ -273,7 +274,7 @@ en:
       created: Blog entry created.
       updated: Blog entry updated.
       deleted: Blog entry deleted.
-      
+
   comments:
     new:
       add_comment: Add comment
@@ -282,7 +283,7 @@ en:
       submit: Submit
     comments:
       title: Comments
-  
+
   emails:
     new:
       title: Change Email
@@ -310,7 +311,7 @@ en:
       verified_with_password: "Email #{@email} verified and password set."
       verification_wait: "Verification email can only be sent once each %{time}. Please wait a while and try again."
       verification_not_found: Invalid verification link.
-      
+
   password_resets:
     new_ask:
       title: Reset Password
@@ -335,7 +336,7 @@ en:
       invalid_link: Invalid password reset link.
       expired_link: Password reset link has expired.
       fb_user_AD: "Access Denied : Facebook Users can't reset password!"
-            
+
   user_mailer:
     activation:
       subject: Activating your I Bike Cph account
@@ -353,7 +354,7 @@ en:
       subject: "Comment: %{title}"
       body: "%{user} added a comment '%{title}' on I Bike Cph:"
     unsubscribing: "You cannot reply to this email. If you don't want to receive emails from I Bike CPH, you can change your settings at %{link}."
-  
+
   issues:
     view_all_issues: View all Entrys
     index:
@@ -440,7 +441,7 @@ en:
   pages:
     terms:
       title: Terms of use for www.ibikecph.dk
-      
+
   errors:
     forbidden:
       title: Sorry

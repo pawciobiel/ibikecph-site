@@ -1,16 +1,15 @@
-<div id="news_container">
+<div id="blog">
+	<% if can? :manage, :blog_entries %>
+		<ul class="admin_panel">
+			<li><%= link_to t('new'),  [:new, :blog_entry] %></li>
+		</ul>
+	<% end %>
 
-	<div id="news_list">
-		<div id="news_top">
-			<%= render 'links' %>
-			<%= render 'tag_cloud' %>
-		</div>
-
-		<h1 class="blog-title"><%=t 'news.title' %></h1>
-		<div class="masonry">
-			<%= render :partial => 'blog_entry', :collection => @blog_entries %>
-		</div>
-		<div class="clear"></div>
+	<%= will_paginate @blog_entries, :class => :pagination %>
+	<div class="items">
+		<%= render partial: 'blog_entry_small', collection: @blog_entries, as: :blog_entry %>
 	</div>
-
+	<div class="clear"></div>
+	<%= will_paginate @blog_entries, :class => :pagination %>
 </div>
+</iv>

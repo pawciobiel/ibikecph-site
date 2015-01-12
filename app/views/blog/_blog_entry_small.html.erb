@@ -1,0 +1,17 @@
+<article class="item">
+	<% if blog_entry.image? %>
+		<%= link_to blog_entry, class: :blog_image do %>
+			<%= image_tag blog_entry.image.g3.url %>
+		<% end %>
+	<% end %>
+		<h2><%= link_to blog_entry.title, blog_entry %></h2>
+		<p class="posted_at" title="blog_entry.created_at.getutc.iso8601"><%= time_ago_in_words(blog_entry.created_at).capitalize %> <%=t 'ago' %></p>
+		<%= auto_html_blog truncate(blog_entry.body, :length => 250), :width => 760, :height => 506 %>
+		<p><%= link_to t('news.read_more'), blog_entry %></p>
+	<% if can? :manage, @blog_entry %>
+		<ul class="admin_panel">
+			<li><%= link_to t('edit'),  [:edit, blog_entry] %></li>
+			<li><%= link_to t('delete'), blog_entry, :method => :delete, :confirm => t('sure_q') %></li>
+		</ul>
+	<% end %>
+</article>

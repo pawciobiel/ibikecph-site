@@ -84,6 +84,9 @@ GEM
       railties (~> 3.1)
       warden (~> 1.2.1)
     diff-lcs (1.2.5)
+    dotenv (1.0.2)
+    dotenv-rails (1.0.2)
+      dotenv (= 1.0.2)
     eco (1.0.0)
       coffee-script
       eco-source
@@ -328,6 +331,7 @@ DEPENDENCIES
   coffee-rails
   delayed_job_active_record
   devise (= 2.2.5)
+  dotenv-rails
   eco
   exception_notification
   factory_girl_rails (~> 4.0)
